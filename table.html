@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+    <style>
+      #complex_table {
+        border-collapse: collapse;
+      }
+      #complex_table th,
+      #complex_table td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+      }
+      #complex_table th {
+        background-color: aquamarine;
+      }
+      #complex_table tr:nth-child(even) {
+        background-color: rebeccapurple;
+      }
+      #complex_table tr:nth-child(odd) {
+        background-color: rgb(185, 231, 4);
+      }
+      #complex_table td[rowspan="2"] {
+        background-color: brown;
+      }
+      #complex_table td[colspan="2"] {
+        background-color: rgb(30, 142, 24);
+      }
+      #complex_table td[colspan="3"] {
+        background-color: rgb(62, 137, 190);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="complex_table">
+      <tr>
+        <th rowspan="3" colspan="2">Header 1</th>
+        <th colspan="4">Header 2</th>
+        <th rowspan="8">Header 3</th>
+      </tr>
+      <tr>
+        <th>SubHeader 1</th>
+        <th>SubHeader 2</th>
+        <th>SubHeader 3</th>
+        <th>SubHeader 4</th>
+      </tr>
+      <tr>
+        <th colspan="2">SubHeader 5</th>
+        <th>SubHeader 6</th>
+        <th>SubHeader 7</th>
+      </tr>
+      <tr>
+        <td rowspan="2">cell 1</td>
+        <td>cell 2</td>
+        <td>cell 3</td>
+        <td>cell 4</td>
+        <td>cell 5</td>
+        <td>cell 6</td>
+      </tr>
+      <tr>
+        <td colspan="2">cell 7</td>
+        <td>cell 8</td>
+        <td>cell 9</td>
+        <td>cell 10</td>
+      </tr>
+      <tr>
+        <td>cell 11</td>
+        <td>cell 12</td>
+        <td>cell 13</td>
+        <td>cell 14</td>
+        <td>cell 15</td>
+        <td>cell 16</td>
+      </tr>
+      <tr>
+        <td colspan="3">cell 17</td>
+        <td>cell 18</td>
+        <td>cell 19</td>
+        <td>cell 20</td>
+      </tr>
+      <tr>
+        <td>cell 21</td>
+        <td>cell 22</td>
+        <td>cell 23</td>
+        <td>cell 24</td>
+        <td>cell 25</td>
+        <td>cell 26</td>
+      </tr>
+    </table>
+  </body>
+</html>
